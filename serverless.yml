@@ -1,0 +1,30 @@
+service: function
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs6.10
+
+functions:
+  function:
+    handler: handler.lambdaFunction #Path to function handler file
+    events:
+       - http:
+           path: function
+           method: post
+           cors: true
+           headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - Token
+              - token
+              - Identity-Provider
+              - identity-provider
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
