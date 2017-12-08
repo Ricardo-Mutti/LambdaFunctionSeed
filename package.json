@@ -9,25 +9,9 @@
     "type": "git",
     "url": "https://bitbucket.org/appsimples/jumpers-backend"
   },
-  "dependencies": {
-    "amazon-cognito-identity-js": "1.19.0",
-    "di-typescript": "1.1.4",
-    "graphql": "0.11.2",
-    "lodash": "4.17.4",
-    "reflect-metadata": "0.1.10",
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2",
-    "uuid": "3.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/aws-lambda": "0.0.16",
-    "@types/aws-sdk": "2.7.0",
-    "@types/graphql": "0.11.0",
-    "@types/lodash": "4.14.74",
-    "@types/node": "8.0.26",
-    "@types/uuid": "3.4.1",
     "eslint": "^4.6.1",
-    "serverless-dynamodb-local": "0.2.25",
     "serverless-offline": "3.15.3",
     "serverless-plugin-typescript": "1.1.1"
   }
